@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright (c) 2019 Razeware LLC
+4  ~
+5  ~ Permission is hereby granted, free of charge, to any person obtaining a copy
+6  ~ of this software and associated documentation files (the "Software"), to deal
+7  ~ in the Software without restriction, including without limitation the rights
+8  ~ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+9  ~ copies of the Software, and to permit persons to whom the Software is
+10  ~ furnished to do so, subject to the following conditions:
+11  ~
+12  ~ The above copyright notice and this permission notice shall be included in
+13  ~ all copies or substantial portions of the Software.
+14  ~
+15  ~ Notwithstanding the foregoing, you may not use, copy, modify, merge, publish,
+16  ~ distribute, sublicense, create a derivative work, and/or sell copies of the
+17  ~ Software in any work that is designed, intended, or marketed for pedagogical or
+18  ~ instructional purposes related to programming, coding, application development,
+19  ~ or information technology.  Permission for such use, copying, modification,
+20  ~ merger, publication, distribution, sublicensing, creation of derivative works,
+21  ~ or sale is expressly withheld.
+22  ~
+23  ~ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+24  ~ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+25  ~ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+26  ~ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+27  ~ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+28  ~ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+29  ~ THE SOFTWARE.
+30-->
+31<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+32    package="com.raywenderlich.android.cocktails"
+33    android:versionCode="1"
+34    android:versionName="1.0" >
+35
+36    <uses-sdk
+37        android:minSdkVersion="19"
+37-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml
+38        android:targetSdkVersion="29" />
+38-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml
+39
+40    <uses-permission android:name="android.permission.INTERNET" />
+40-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:36:3-65
+40-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:36:20-62
+41
+42    <application
+42-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:38:3-57:17
+43        android:name="com.raywenderlich.android.cocktails.CocktailsApplication"
+43-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:39:5-41
+44        android:allowBackup="true"
+44-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:40:5-31
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.2.0] /Users/MIF50/.gradle/caches/transforms-2/files-2.1/8505c4bc6ae7cc55e5ed61862a293f7d/core-1.2.0/AndroidManifest.xml:24:18-86
+46        android:debuggable="true"
+47        android:icon="@mipmap/ic_launcher"
+47-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:41:5-39
+48        android:label="@string/app_name"
+48-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:42:5-37
+49        android:roundIcon="@mipmap/ic_launcher_round"
+49-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:43:5-50
+50        android:supportsRtl="true"
+50-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:44:5-31
+51        android:theme="@style/AppTheme" >
+51-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:45:5-36
+52        <activity
+52-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:48:5-56:16
+53            android:name="com.raywenderlich.android.cocktails.CocktailsGameActivity"
+53-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:49:7-44
+54            android:label="@string/main_title" >
+54-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:50:7-41
+55            <intent-filter>
+55-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:51:7-55:23
+56                <action android:name="android.intent.action.MAIN" />
+56-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:52:9-61
+56-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:52:17-58
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:54:9-69
+58-->/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/src/main/AndroidManifest.xml:54:19-66
+59            </intent-filter>
+60        </activity>
+61    </application>
+62
+63</manifest>
