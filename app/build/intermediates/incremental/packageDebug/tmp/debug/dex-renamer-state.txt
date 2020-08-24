@@ -1,0 +1,4 @@
+#Mon Aug 24 23:42:32 AST 2020
+base.0=/Users/MIF50/Downloads/Android_Test_Driven_Development_by_Tutorials_Source_Code_v1.0.0/05-unit-tests/starter/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
