@@ -3,8 +3,9 @@ package com.raywenderlich.android.cocktails.game.model
 import java.lang.IllegalArgumentException
 
 class Question(
-        private val correctOption: String,
-        private val inCorrectOption: String
+         val correctOption: String,
+         val inCorrectOption: String,
+         val imageUrl: String? = null
 ) {
     var answeredOption: String? = null
         private set

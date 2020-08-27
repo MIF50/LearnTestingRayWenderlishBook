@@ -3,7 +3,7 @@ package com.raywenderlich.android.cocktails.game.model
 
 class Game(
         private val questions: List<Question>,
-        private val score: Score = Score(0)
+        val score: Score = Score(0)
 ) {
 
 
