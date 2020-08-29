@@ -23,15 +23,20 @@ class CocktailsGameViewModel(
     fun getQuestion(): LiveData<Question> = questionLiveData
     fun getScore(): LiveData<Score> = scoreLiveData
 
+    private var game: Game? = null
+
 
     fun initGame(){
         loadingLiveData.value = true
         errorLiveData.value = false
+
         factory.buildGame(object :CocktailsGameFactory.CallBack{
             override fun onSuccess(game: Game) {
                 errorLiveData.value = false
                 loadingLiveData.value = false
                 scoreLiveData.value = game.score
+                this@CocktailsGameViewModel.game = game
+                nextQuestion()
             }
 
             override fun onError() {
@@ -40,6 +45,22 @@ class CocktailsGameViewModel(
             }
 
         })
+    }
+
+    fun nextQuestion() {
+        game?.let{
+            questionLiveData.value = it.nextQuestion()
+        }
+    }
+
+    fun answerQuestion(question: Question, answer: String) {
+        game?.let {
+            it.answer(question,answer)
+            repository.saveHighScore(it.score.highest)
+            scoreLiveData.value = it.score
+            questionLiveData.value = question
+
+        }
     }
 
 }
